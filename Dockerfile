@@ -1,4 +1,4 @@
-FROM hmcts/cnp-aks-client:1.1
+FROM hmcts/cnp-aks-client:1.3
 
 RUN apk update && apk add --no-cache \
   nodejs-npm openjdk8 maven git yarn docker curl openssh \
