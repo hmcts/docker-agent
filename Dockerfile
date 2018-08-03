@@ -1,7 +1,7 @@
 FROM hmcts/cnp-aks-client:1.1
 
 RUN apk update && apk add --no-cache \
-  nodejs-npm openjdk8 maven git yarn docker curl \
+  nodejs-npm openjdk8 maven git yarn docker curl openssh \
   && npm install npm@latest minimatch@latest graceful-fs@latest -g \
   && npm install --global gulp eslint \
   && curl https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip -o /tmp/terraform_0.11.7_linux_amd64.zip \
